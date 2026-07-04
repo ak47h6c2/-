@@ -5,10 +5,10 @@ const checks = [
     file: "README.md",
     terms: [
       "docs/LOCAL_USER_GUIDE.md",
-      "CSV files",
+      "CSV",
       "smoke:cleanup",
-      "Edge Extension",
-      "Local Backup",
+      "Edge 扩展",
+      "本地备份",
       "npm run verify"
     ]
   },
