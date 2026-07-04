@@ -1,0 +1,24 @@
+{
+  "name": "careerpilot-apac",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @careerpilot/web",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "docs:check": "node scripts/check-docs.mjs",
+    "verify": "node scripts/verify.mjs",
+    "verify:static": "node scripts/verify.mjs --skip-runtime",
+    "verify:edge": "node scripts/verify.mjs --edge",
+    "db:generate": "npm run db:generate -w @careerpilot/web",
+    "db:push": "npm run db:push -w @careerpilot/web"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}

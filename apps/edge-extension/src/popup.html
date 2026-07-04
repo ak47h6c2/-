@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CareerPilot 自动填表</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header>
+        <span>CareerPilot</span>
+        <strong>自动填表</strong>
+      </header>
+
+      <section class="context-card" id="contextCard" aria-live="polite">
+        <div class="context-copy">
+          <span>当前投递包</span>
+          <strong id="contextTitle">正在读取绑定...</strong>
+          <p id="contextMeta">打开申请页后会检查本地工作台的 Edge 上下文。</p>
+        </div>
+        <button id="refreshContextButton" type="button" class="context-badge" aria-label="刷新投递包绑定">刷新</button>
+      </section>
+
+      <section class="status-card" id="statusCard">
+        <p id="statusText">打开申请页面后，先扫描表单字段。</p>
+        <div class="stats">
+          <div>
+            <span id="detectedCount">0</span>
+            <small>已识别</small>
+          </div>
+          <div>
+            <span id="safeCount">0</span>
+            <small>可填写</small>
+          </div>
+          <div>
+            <span id="reviewCount">0</span>
+            <small>待确认</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="actions">
+        <button id="scanButton" type="button">扫描当前页面</button>
+        <button id="snapshotButton" type="button" class="secondary">保存表单快照</button>
+        <button id="fillButton" type="button">填写安全字段</button>
+        <button id="openPackageButton" type="button" class="secondary" disabled>打开当前投递包</button>
+        <button id="openAppButton" type="button" class="secondary">打开本地工作台</button>
+      </section>
+
+      <section class="notes">
+        <p>不会自动提交申请，不处理验证码，不填写未确认的敏感问题。</p>
+      </section>
+    </main>
+    <script src="./popup.js"></script>
+  </body>
+</html>

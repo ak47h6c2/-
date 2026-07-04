@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "CareerPilot 自动填表",
+  "description": "CareerPilot APAC 的本地安全申请表助手。",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "CareerPilot 自动填表",
+    "default_popup": "src/popup.html"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["http://localhost:3000/*", "http://127.0.0.1:3000/*"],
+  "background": {
+    "service_worker": "src/background.js"
+  }
+}

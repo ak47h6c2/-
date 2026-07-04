@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "generatedAt": "2026-07-04T05:12:19.639Z",
+  "specHash": "616ca4ad02bc87a1c00d0fefd84133a9ad0d5f8cc6e78685d3e532505e081bce",
+  "output": "design-system\\generated\\careerpilot-figma-library.use-figma.js",
+  "tokenCount": 35,
+  "componentCount": 17,
+  "figmaComponents": [
+    "CareerPilot/Nav Rail",
+    "CareerPilot/Workbench Header",
+    "CareerPilot/Workflow Ribbon",
+    "CareerPilot/Local Run Status",
+    "CareerPilot/Global Search",
+    "CareerPilot/Panel",
+    "CareerPilot/Button",
+    "CareerPilot/Form Field",
+    "CareerPilot/Data Card",
+    "CareerPilot/Source Sync",
+    "CareerPilot/Daily Source Refresh",
+    "CareerPilot/Status Chip",
+    "CareerPilot/Empty State",
+    "CareerPilot/ATS Lab",
+    "CareerPilot/Mapping Learning",
+    "CareerPilot/Snapshot Replay",
+    "CareerPilot/Pipeline Review"
+  ]
+}
